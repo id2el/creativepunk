@@ -1,0 +1,686 @@
+/* 폰트 : 프리텐다드 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+/* 전체 */
+* { margin: 0; padding: 0; }
+body { 
+    font-family: 'Pretendard-Regular';
+    background: radial-gradient( #555555, #3e3e3e,#323232, #282828, #242424 );
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow-x: hidden;
+}
+/* 리스트 스타일 제거 */
+li {
+    list-style: none;
+}
+/* a 태그 밑줄 제거 */
+a {
+    text-decoration: none;
+    display: block;
+    color: #eee;
+    font-weight: bold;
+}
+/* nav 영역의주메뉴만 가로로 나열, 일정한 간격으로 떨어뜨림*/
+header nav > ul > li { float: left; }
+header nav > ul > li > a { padding: 30px 32px;}
+/* 사이즈 조정 */
+.wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+header, footer, section {
+    width: 100%; float: left;
+    /*float : 서브메뉴가 section 객체를 밀어내지 못하게 하고, footer 가 section 객체와 겹치지 않도록 함*/
+}
+.logo img {
+    width: 50%;
+}
+/* 헤더 백그라운드 컬러 */
+header {
+    background-color: #242424;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid rgb(44, 44, 44);
+    box-shadow: 0 1px 8px rgb(16, 16, 16);
+    position: fixed;
+    z-index: 5;
+    height: 130px;
+    /*0 : 좌우 그림자 없음 1: 그림자 거리 8: 그림자 크기*/
+}
+/* 헤더 요소 배치 */
+nav {
+    margin-top: 25px;
+    /* 중앙에 배치 */
+    position: absolute;
+    left:50%;
+    transform:translateX(-50%);
+}
+.icon {
+    float:right;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+.logo {
+    float: left;
+    margin: 10px 30px;
+}
+.logo img {
+    float:left;
+    margin-right: 20px;
+}
+.info {
+    float:right;
+    font-size: 14px;
+    margin-right: 2%;
+}
+.info ul li {
+    float: left;
+}
+/* right_header */
+.right_header {
+    float: right;
+}
+.hamburger {
+    float: left;
+    width: 30px;
+    margin-top: 25px;
+    margin-right: 30px;
+}
+.language_sub {
+    padding: 20px;
+    background-color: #525252e9;
+    margin-top: 10px;
+    width: 64px;
+    margin-left: -15px;
+    text-align: center;
+    display: none;
+}
+.language_sub li a {
+    color:#eee;
+    padding: 5px 0;
+    font-weight: bold;
+}
+.language > a {
+    margin-left: -30px;
+    padding: 0 30px;
+}
+.language {
+    float: left;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+nav > ul > li {
+    float: left;
+}
+nav ul > li > a {
+    float:right;
+}
+.info ul li a {
+    float: left;
+}
+/* info에 파이프 기호 넣기 */
+.info ul li:first-child:after {
+    content: "ㅣ";
+    float: right;
+    color:#eee;
+}
+/* box-sizing */
+header, footer, section, div, nav {
+    box-sizing: border-box;
+}
+/* 주메뉴 */
+nav > ul {
+    position: relative;
+}
+nav > ul > li {
+    float: left;
+    text-align: center;
+}
+nav ul li a {
+    font-size: 30px;
+}
+/* 서브메뉴 */
+nav ul li ul {
+    display: none;
+    padding: 20px 0;
+    background-color: #89898971;
+}
+nav ul li ul li a {
+    font-size: 20px;
+    float: left;
+    line-height: 30px;
+}
+/* 주메뉴에 마우스 올리면 서브메뉴 나타남 */
+nav > ul > li:hover ul {
+    /*보임*/
+    display: block;
+}
+/*up arrow*/
+.up_arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+}
+.up_arrow img {
+    width: 50%;
+}
+/*content*/
+.main_banner {
+    background-image: url(/Portfoiio_img/main_banner_img.png);
+    width: 1500px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+.future_it {
+    padding-top: 28px;
+    margin-left: 240px;
+    color: #eee;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 120px;
+}
+
+.introduce {
+    margin: 200px 0;
+    padding-bottom: 340px;
+}
+.introduce img {
+    float: left;
+    width : 30%;
+}
+.center img {
+    width : 30%;
+    margin: 0 5%;
+}
+.arrow {
+    margin-top: 10%;
+    width: 10%;
+    float: left;
+    position: relative;
+}
+.ghost{
+    color: #eee;
+    margin-left: 240px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.sf {
+    color: rgb(199, 45, 81);
+    margin-top: 50px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.inplant_img {
+    padding: 10% 15% 0 15%;
+    margin: 0 auto;
+}
+.inplant_txt {
+    margin-left: 1000px;
+    margin-bottom: 30px;
+}
+.inplant_txt:hover p {
+    text-decoration: underline;
+}
+.qr_img {
+    padding: 13% 15% 0 15%;
+    margin: 0 auto;
+}
+.valorant {
+    padding: 13% 15% 0 15%;
+    padding-bottom: 230px;
+    margin: 0 auto;
+}
+.valorant, .valorant_img{
+    float: left;
+}
+.valorant_txt {
+    float: right;
+    width: 100%;
+    color: #eee;
+    font-size: 30px;
+    background: radial-gradient( #393939, #4e4e4e, #555555 );
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.valorant_img {
+    box-sizing: border-box;
+    width: 15%;
+    margin-right: 50px;
+}
+.valorant_img img:hover {
+    border: 3px solid;
+    transition: border .3s;
+    border-image: linear-gradient(to right,#eee 0%, rgb(255, 0, 251) 50%, rgb(0, 0, 0) 100%);
+    border-image-slice: 1;
+}
+.valorant_txt {
+    margin-left: 50px;
+    height: 264px;
+    width: 600px;
+}
+.valorant_txt h1 {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.overwatch2_img {
+    padding: 13% 15% 0 15%;
+}
+.overwatch2 {
+    margin: 0 auto;
+    margin-bottom: 130px;
+}
+p {
+    margin: 50px auto;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.overwatch_underline {
+    position: relative;
+}
+.overwatch_underline .underline{
+    /* 부모객체 기준 위치 잡기 */
+    position: absolute;
+    left: 1070px;
+    bottom: 50px;
+    width: 30px;
+    height: 12px;
+    /* 화살표 사이즈 */
+    cursor: pointer;
+    display: inline-block;
+    /* 0.n초동안 화살표가 늘어남 */
+    transition: all 0.5s;
+}
+/* 화살표 꼬리*/
+.overwatch_underline .underline:before{
+    content: "";
+    position: absolute;
+    /* 포지션 -> 부모 기준으로 배치*/
+    left: 0;
+    top: 50%;
+    width: 100%;
+    border-bottom:3px solid #111;
+    transform: translateY(-50%);
+    border-color: #eee;
+}
+.overwatch_underline:hover .underline{
+    width: 158px;
+}
+.overwatch_underline .underline:before,
+.overwatch_underline .underline:after {
+    border-color: #eee;
+}
+.main_underline {
+    position: relative;
+}
+.main_underline .underline{
+    /* 부모객체 기준 위치 잡기 */
+    position: absolute;
+    left: 240px;
+    bottom: 43px;
+    width: 30px;
+    height: 12px;
+    /* 화살표 사이즈 */
+    cursor: pointer;
+    display: inline-block;
+    /* 0.n초동안 화살표가 늘어남 */
+    transition: all 0.5s;
+}
+/* 화살표 꼬리*/
+.main_underline .underline:before{
+    content: "";
+    position: absolute;
+    /* 포지션 -> 부모 기준으로 배치*/
+    left: 0;
+    top: 50%;
+    width: 100%;
+    border-bottom:3px solid #111;
+    transform: translateY(-50%);
+    border-color: #eee;
+}
+.main_underline:hover .underline{
+    width: 255px;
+}
+.main_underline .underline:before,
+.main_underline .underline:after {
+    border-color: #eee;
+}
+.valorant_underline {
+    position: relative;
+}
+.valorant_underline .underline{
+    /* 부모객체 기준 위치 잡기 */
+    position: absolute;
+    left: 790px;
+    top: 213px;
+    width: 30px;
+    height: 12px;
+    /* 화살표 사이즈 */
+    cursor: pointer;
+    display: inline-block;
+    /* 0.n초동안 화살표가 늘어남 */
+    transition: all 0.5s;
+}
+/* 화살표 꼬리*/
+.valorant_underline .underline:before{
+    content: "";
+    position: absolute;
+    /* 포지션 -> 부모 기준으로 배치*/
+    left: 0;
+    top: 50%;
+    width: 100%;
+    border-bottom:3px solid #111;
+    transform: translateY(-50%);
+    border-color: #eee;
+}
+.valorant_underline .underline i {
+    overflow: hidden;
+    display: inline-block;
+    border: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+}
+.valorant_underline:hover .underline{
+    width: 125px;
+}
+.valorant_underline .underline:before,
+.valorant_underline .underline:after {
+    border-color: #ff00d0;
+}
+.cyberpunk {
+    width: 1260px;
+    height: 1280px;
+    margin: 0 auto;
+    background-image: url('/Portfoiio_img/cyberpunk.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 40px;
+}
+.cyberpunk p {
+    color: #eee;
+    font-weight: bold;
+    font-size: 35px;
+    padding-left: 260px;
+    padding-top: 115px;
+    text-shadow: 1px 1px 1px #393939;
+}
+
+.cyberpunk_txt h1 {
+    color: #eee;
+    font-size: 60px;
+    font-weight: bold;
+    padding-left: 170px;
+    padding-top: 450px;
+}
+
+.slide {
+    background-image: url(/Portfoiio_img/slide.png);
+    width: 1920px;
+    height: 1000px;
+    z-index: 100;
+    position: relative;
+}
+.slide h1 {
+    font-size: 50px;
+    top: 420px;
+    left: 250px;
+    line-height: 85px;
+    font-weight: bolder;
+    color: #eee;
+    position: absolute;
+}
+
+.logo_gray {
+    margin-left: 200px;
+    margin-bottom: 30px;
+}
+.copyright {
+    color: #eee;
+    float: left;
+    margin-left: 200px;
+}
+.bottom {
+    float: left;
+    width: 100%;
+}
+.insta {
+    float: right;
+    margin-right: 200px;
+}
+.insta img {
+    width: 40px;
+}
+.centerbox {
+    margin: 0 auto;
+}
+footer {
+    padding: 60px;
+}
+
+.s1 {
+    background-image: url("/Portfoiio_img/Frostpunk.png");
+    background-repeat: no-repeat;
+    background-size: 600px 400px;
+    background-position: center;
+}
+.s2 {
+    background-image: url("/Portfoiio_img/introduce_cyberpunk2077.png");
+    background-repeat: no-repeat;
+    background-size: 600px 400px;
+    background-position: center;
+}
+.s3 {
+    background-image: url("/Portfoiio_img/introduce_patron.png");
+    background-repeat: no-repeat;
+    background-size: 600px 400px;
+    background-position: center;
+}
+.s4 {
+    background-image: url("/Portfoiio_img/finalfantasy.png");
+    background-repeat: no-repeat;
+    background-size: 600px 400px;
+    background-position: center;
+}
+.s5 {
+    background-image: url("/Portfoiio_img/introduce_overwatch2.png");
+    background-repeat: no-repeat;
+    background-size: 600px 400px;
+    background-position: center;
+}
+.s6 {
+    background-image: url("/Portfoiio_img/prototype.png");
+    background-repeat: no-repeat;
+    background-size: 600px 400px;
+    background-position: center;
+}
+.introduce {
+    padding-right: 30px;
+    padding-top: 20px;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: right;
+    text-shadow: 3px 3px 3px #111
+}
+
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: right;
+    -webkit-box-align: center;
+    -ms-flex-align: right;
+    -webkit-align-items: center;
+    align-items: center;
+    position: relative;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* swipe slide button */
+.swiper-button-next {
+    right: 33%;
+    background-image: url(/Portfoiio_img/introduce_right_arrow.png); opacity: 0.5;
+    width: 60px; height: 60px;
+    background-size: cover;
+}
+.swiper-button-next:hover {
+    opacity: 0.7;
+}
+.swiper-button-next:after {
+    content: "";
+}
+.swiper-button-prev {
+    left: 33%;
+    background-image: url(/Portfoiio_img/introduce_left_arrow.png); opacity: 0.5;
+    width: 60px; height: 60px;
+    background-size: cover;
+}
+.swiper-button-prev:hover {
+    opacity: 0.7;
+}
+.swiper-button-prev:after {
+    content: "";
+}
+
+/* 슬라이드 동그라미 */
+/* .swiper {
+    overflow: visible; /*hidden의 반대
+} */
+.swiper-pagination {
+    bottom: -5px;
+}
+.swiper-pagination-bullet {
+    width: 14px; height: 14px;
+}
+.swiper-pagination-bullet-active {
+    background-color: #eee;
+}
+.swiper {
+    width: 100%;
+    height: 600px;
+  }
+.swiper2 {
+    margin: 0 auto;
+    width: 1200px;
+    height: 520px;
+    margin-top: 80px;
+    position: relative;
+}
+
+h2 {
+    color: #c8b645;
+    font-weight: bolder;
+    text-align: right;
+    right: 30px;
+    font-size: 70px;
+    bottom: 110px;
+    text-shadow: 3px 3px 3px rgb(27, 27, 27);
+    position: absolute;
+}
+
+.mySwiper2 img {
+    height : 340px;
+    width: 224px;
+    border-width: 0px;
+    border-color: rgba(238, 238, 238, 0);
+}
+.swiper_h1 {
+    font-size: 60px;
+    color : #eee;
+    text-align: center;
+}
+
+.mySwiper2 img:hover {
+    border: 3px solid;
+    transition: border .2s;
+    border-image: linear-gradient(to right, red 0%, yellow 33%, rgb(0, 255, 0) 66%, blue 100%);
+    border-image-slice: 1;
+    box-sizing: border-box;
+}
+
+.swiper-wrapper2 {
+    background: radial-gradient(#282828, #242424);
+    width: 1360px;
+    height: 340px;
+}
+.mySwiper2 .swiper-pagination {
+    bottom: -10px;
+}
+
+/* 햄버거 메뉴를 누르면 나타남 */
+
+.popup {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    border-top: 6px solid #eee;
+    background-color: #2a2a2ab9;
+    box-sizing: border-box;
+    padding : 60px;
+    display: none;
+}
+
+.popup .close_btn img {
+    width: 40px;
+    float: right;
+}
+
+.popup > ul {
+    padding: 80px 200px;
+    margin: 20px;
+}
+
+.popup > ul > li {
+    display: inline-table;
+    margin: 30px 60px;
+    width: 200px;
+}
+
+.popup > ul> li > a {
+    white-space: nowrap;
+    font-size: 42px;
+    font-weight: bold;
+    padding: 30px;
+}
+.popup ul li ul li a {
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.popup > ul > li > a:hover {
+    text-decoration: underline 2px #eee;
+}
+.popup .sub li:hover .subb {
+    text-decoration: underline 1px #eee;
+}
+
+.e2e2 {
+    width: 320px;
+    height: 180px;
+    float: right;
+    position: relative;
+    margin-top: 70px;
+
+}
