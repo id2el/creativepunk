@@ -262,6 +262,11 @@
        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
             <!-- Initialize Swiper -->
             <script>
+                // a태그 누를 때 화면 맨 위로 올라가는 것 방지
+                $('a').click(function(e){
+                    e.preventDefault();
+                });
+                // e: 클릭 이벤트를 전달하는 매개변수
                 var swiper = new Swiper(".mySwiper", {
                     // 자동 슬라이드
                     autoplay: {
