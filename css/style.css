@@ -168,7 +168,7 @@ nav > ul > li:hover ul {
 }
 /*content*/
 .main_banner {
-    background-image: url('Portfoiio_img/main_banner_img.png');
+    background-image: url('/Portfoiio_img/main_banner_img.png');
     width: 1500px;
     height: 300px;
     margin: 0 auto;
@@ -215,7 +215,7 @@ nav > ul > li:hover ul {
 }
 
 .inplant_img {
-    padding: 10% 15% 0 15%;
+    padding: 8% 15% 0 15%;
     margin: 0 auto;
 }
 .inplant_txt {
@@ -226,16 +226,17 @@ nav > ul > li:hover ul {
     text-decoration: underline;
 }
 .qr_img {
-    padding: 13% 15% 0 15%;
+    padding: 8% 15% 0 15%;
     margin: 0 auto;
 }
 .valorant {
-    padding: 13% 15% 0 15%;
+    padding: 8% 15% 0 15%;
     padding-bottom: 230px;
     margin: 0 auto;
 }
 .valorant, .valorant_img{
     float: left;
+    box-sizing: border-box;
 }
 .valorant_txt {
     float: right;
@@ -267,11 +268,11 @@ nav > ul > li:hover ul {
     margin-left: 40px;
 }
 .overwatch2_img {
-    padding: 13% 15% 0 15%;
+    padding: 8% 15% 0 15%;
 }
 .overwatch2 {
     margin: 0 auto;
-    margin-bottom: 130px;
+    margin-bottom: 30px;
 }
 p {
     margin: 50px auto;
@@ -397,11 +398,11 @@ p {
     width: 1260px;
     height: 1280px;
     margin: 0 auto;
-    background-image: url('Portfoiio_img/cyberpunk.png');
+    background-image: url('/Portfoiio_img/cyberpunk.png');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .cyberpunk p {
     color: #eee;
@@ -421,7 +422,7 @@ p {
 }
 
 .slide {
-    background-image: url('Portfoiio_img/slide.png');
+    background-image: url('/Portfoiio_img/slide.png');
     width: 1920px;
     height: 1000px;
     z-index: 100;
@@ -465,37 +466,37 @@ footer {
 }
 
 .s1 {
-    background-image: url("Portfoiio_img/Frostpunk.png");
+    background-image: url("/Portfoiio_img/Frostpunk.png");
     background-repeat: no-repeat;
     background-size: 600px 400px;
     background-position: center;
 }
 .s2 {
-    background-image: url("Portfoiio_img/introduce_cyberpunk2077.png");
+    background-image: url("/Portfoiio_img/introduce_cyberpunk2077.png");
     background-repeat: no-repeat;
     background-size: 600px 400px;
     background-position: center;
 }
 .s3 {
-    background-image: url("Portfoiio_img/introduce_patron.png");
+    background-image: url("/Portfoiio_img/introduce_patron.png");
     background-repeat: no-repeat;
     background-size: 600px 400px;
     background-position: center;
 }
 .s4 {
-    background-image: url("Portfoiio_img/finalfantasy.png");
+    background-image: url("/Portfoiio_img/finalfantasy.png");
     background-repeat: no-repeat;
     background-size: 600px 400px;
     background-position: center;
 }
 .s5 {
-    background-image: url("Portfoiio_img/introduce_overwatch2.png");
+    background-image: url("/Portfoiio_img/introduce_overwatch2.png");
     background-repeat: no-repeat;
     background-size: 600px 400px;
     background-position: center;
 }
 .s6 {
-    background-image: url("Portfoiio_img/prototype.png");
+    background-image: url("/Portfoiio_img/prototype.png");
     background-repeat: no-repeat;
     background-size: 600px 400px;
     background-position: center;
@@ -536,7 +537,7 @@ footer {
 /* swipe slide button */
 .swiper-button-next {
     right: 33%;
-    background-image: url('Portfoiio_img/introduce_right_arrow.png'); opacity: 0.5;
+    background-image: url('/Portfoiio_img/introduce_right_arrow.png'); opacity: 0.5;
     width: 60px; height: 60px;
     background-size: cover;
 }
@@ -548,7 +549,7 @@ footer {
 }
 .swiper-button-prev {
     left: 33%;
-    background-image: url('Portfoiio_img/introduce_left_arrow.png'); opacity: 0.5;
+    background-image: url('/Portfoiio_img/introduce_left_arrow.png'); opacity: 0.5;
     width: 60px; height: 60px;
     background-size: cover;
 }
