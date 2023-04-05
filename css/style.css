@@ -398,7 +398,7 @@ p {
     width: 1260px;
     height: 1280px;
     margin: 0 auto;
-    background-image: url('Portfoiio_img/cyberpunk.png');
+    background-image: url("Portfoiio_img/cyberpunk.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -422,7 +422,7 @@ p {
 }
 
 .slide {
-    background-image: url('Portfoiio_img/slide.png');
+    background-image: url("Portfoiio_img/slide.png");
     width: 1920px;
     height: 1000px;
     z-index: 100;
@@ -549,7 +549,7 @@ footer {
 }
 .swiper-button-prev {
     left: 33%;
-    background-image: url('Portfoiio_img/introduce_left_arrow.png'); opacity: 0.5;
+    background-image: url("Portfoiio_img/introduce_left_arrow.png"); opacity: 0.5;
     width: 60px; height: 60px;
     background-size: cover;
 }
